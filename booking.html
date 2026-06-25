@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حجز ملعبك | Kick Off</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    .booking-page {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(rgba(5, 25, 14, 0.7), rgba(5, 25, 14, 0.9)),
+                  url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=1200&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+    }
+    .booking-form {
+      width: 100%;
+      max-width: 450px;
+      padding: 40px;
+    }
+    .booking-form h2 { text-align: center; margin-bottom: 25px; font-weight: 700;}
+    .booking-form form { display: flex; flex-direction: column; }
+    .booking-form input, .booking-form select {
+      margin-bottom: 20px;
+      padding: 14px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      color: white;
+      font-size: 1rem;
+    }
+    .booking-form input::placeholder { color: #94a3b8; }
+    .booking-form select option { background: #05190e; color: white; }
+    .back-btn {
+      text-align: center;
+      margin-top: 15px;
+      display: block;
+      color: #a3e635;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- صوت الدخول للصفحة أو العودة -->
+  <audio id="page-load-sound" src="https://assets.mixkit.co/active_storage/sfx/2019/2019-84.wav" preload="auto"></audio>
+
+  <section class="booking-page">
+    <div class="booking-form glass-card">
+      <h2>حجز ملعب كرة القدم</h2>
+      <form>
+        <input type="text" placeholder="اسمك بالكامل" required>
+        <input type="tel" placeholder="رقم الهاتف" required>
+        <select required>
+          <option value="">اختر نوع الملعب</option>
+          <option>الملعب الخماسي 5x5</option>
+          <option>الملعب السباعي 7x7</option>
+          <option>ستاد VIP المضيء</option>
+        </select>
+        <input type="date" required>
+        <input type="time" required>
+        <button type="submit" class="btn-gradient">تأكيد الحجز الآن</button>
+        <a href="index.html" class="back-btn">← العودة للرئيسية</a>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const loadSound = document.getElementById("page-load-sound");
+      if(loadSound) {
+        loadSound.volume = 0.4;
+        loadSound.play().catch(() => {});
+      }
+    });
+  </script>
+</body>
+</html>

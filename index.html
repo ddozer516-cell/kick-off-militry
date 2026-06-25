@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kick Off | منصة حجز الملاعب الأولى</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- تفاعل الصوت الخفي -->
+  <audio id="hover-sound" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-84.wav" preload="auto"></audio>
+  <audio id="click-sound" src="https://assets.mixkit.co/active_storage/sfx/2571/2571-84.wav" preload="auto"></audio>
+  <audio id="nav-sound" src="https://assets.mixkit.co/active_storage/sfx/2019/2019-84.wav" preload="auto"></audio>
+
+  <!-- ================= NAVBAR ================= -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Kick Off</h1>
+      <ul class="nav-links">
+        <li><a href="#" class="nav-item">الرئيسية</a></li>
+        <li><a href="#fields" class="nav-item">ملاعبنا</a></li>
+        <li><a href="#gallery" class="nav-item">المعرض</a></li>
+        <li><a href="#pricing" class="nav-item">الأسعار</a></li>
+        <li><a href="#stats" class="nav-item">إحصائيات</a></li>
+        <li><a href="#faq" class="nav-item">الأسئلة الشائعة</a></li>
+        <li><a href="#contact" class="nav-item">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero animate-fade-in">
+    <div class="hero-text">
+      <h2>احجز ملعبك الاحترافي الآن بكل سهولة</h2>
+      <p>أفضل ملاعب كرة القدم العشبية والمضاءة في انتظارك أنت وفريقك.</p>
+      <a href="booking.html" class="btn btn-gradient nav-link-sound">احجز الآن</a>
+    </div>
+  </section>
+
+  <!-- ================= STATISTICS SECTION ================= -->
+  <section class="stats" id="stats">
+    <div class="stats-container">
+      <div class="stat-item">
+        <h3 class="counter" data-target="15">0</h3>
+        <p>ملعب معتمد</p>
+      </div>
+      <div class="stat-item">
+        <h3 class="counter" data-target="8500">0</h3>
+        <p>لاعب مسجل</p>
+      </div>
+      <div class="stat-item">
+        <h3 class="counter" data-target="12000">0</h3>
+        <p>مباراة ملعوبة</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED FIELDS (GLASSMORPHISM) ================= -->
+  <section class="fields" id="fields">
+    <h2 class="section-title">الملاعب المتميزة</h2>
+    <div class="field-container">
+      <div class="field-card glass-card">
+        <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=600&auto=format&fit=crop" alt="ملعب خماسي">
+        <div class="card-content">
+          <h3>الملعب الخماسي 5x5</h3>
+          <p>مناسب للمباريات السريعة والتحديات الصغيرة.</p>
+          <span class="price">100 EGP / ساعة</span>
+        </div>
+      </div>
+      <div class="field-card glass-card">
+        <img src="https://images.unsplash.com/photo-1529900748604-07564a03e7a6?q=80&w=600&auto=format&fit=crop" alt="ملعب سباعي">
+        <div class="card-content">
+          <h3>الملعب السباعي 7x7</h3>
+          <p>أرضية عشبية ممتازة للمباريات الحماسية الكبيرة.</p>
+          <span class="price">150 EGP / ساعة</span>
+        </div>
+      </div>
+      <div class="field-card glass-card">
+        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=600&auto=format&fit=crop" alt="ستاد VIP">
+        <div class="card-content">
+          <h3>ستاد VIP المضيء</h3>
+          <p>تجربة احترافية كاملة مع إضاءة ليلية وتصوير للمباراة.</p>
+          <span class="price">250 EGP / ساعة</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES & BANNER ================= -->
+  <section class="services-banner">
+    <div class="banner-content glass-card">
+      <h2>مرافق وخدمات عالمية في Kick Off</h2>
+      <p>غرف تبديل ملابس معقمة، كافيه للمشروبات، مواقف سيارات مجانية، وكرات مخصصة لكل حجز.</p>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY SECTION (6 IMAGES - CONFIRMED LINKS) ================= -->
+  <section class="gallery" id="gallery">
+    <h2 class="section-title">معرض الصور</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=400&auto=format&fit=crop" alt="مرافق 1"></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=400&auto=format&fit=crop" alt="مرافق 2"></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1529900748604-07564a03e7a6?q=80&w=400&auto=format&fit=crop" alt="مرافق 3"></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=400&auto=format&fit=crop" alt="مرافق 4"></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1431324155629-1a6edd1dee1a?q=80&w=400&auto=format&fit=crop" alt="مرافق 5"></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1510566337590-2fc1f21d0faa?q=80&w=400&auto=format&fit=crop" alt="مرافق 6"></div>
+    </div>
+  </section>
+
+  <!-- ================= PRICING PLANS ================= -->
+  <section class="pricing" id="pricing">
+    <h2 class="section-title">خطط الأسعار والاشتراكات</h2>
+    <div class="pricing-container">
+      <div class="price-card glass-card">
+        <h3>الحجز الفردي</h3>
+        <div class="amount">100-250 EGP<span>/ ساعة</span></div>
+        <ul>
+          <li>حجز ملعب اختيارك</li>
+          <li>مياه مجانية للفريق</li>
+          <li>كرة مباراة احترافية</li>
+        </ul>
+        <a href="booking.html" class="btn btn-gradient nav-link-sound">احجز الآن</a>
+      </div>
+      <div class="price-card glass-card featured-plan">
+        <div class="badge">الأكثر طلباً</div>
+        <h3>الاشتراك الشهري</h3>
+        <div class="amount">750 EGP<span>/ شهرياً</span></div>
+        <ul>
+          <li>4 حجووزات شهرياً (خماسي)</li>
+          <li>توفير 25% من السعر الأصلي</li>
+          <li>طقم تدريب مجاني لمرة واحدة</li>
+        </ul>
+        <a href="booking.html" class="btn btn-gradient nav-link-sound">اشترك الآن</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CUSTOMER REVIEWS ================= -->
+  <section class="reviews">
+    <h2 class="section-title">آراء اللاعبين</h2>
+    <div class="reviews-container">
+      <div class="review-item glass-card">
+        <p>"أفضل ملاعب في القاهرة، التنظيم ممتاز والعشب جودته عالية جداً والنظام الصوتي رائع."</p>
+        <h4>كابتن أحمد حسن</h4>
+      </div>
+      <div class="review-item glass-card">
+        <p>"تطبيق وموقع الحجز سهل جداً، والخدمة هناك والإضاءة الليلية في ستاد VIP خرافية."</p>
+        <h4>محمد علي</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ SECTION ================= -->
+  <section class="faq" id="faq">
+    <h2 class="section-title">الأسئلة الشائعة</h2>
+    <div class="faq-container">
+      <div class="faq-item glass-card">
+        <div class="faq-question"><h3>هل يمكنني إلغاء الحجز أو تعديله?</h3></div>
+        <div class="faq-answer"><p>نعم، يمكنك إلغاء أو تعديل موعد الحجز قبل المباراة بـ 24 ساعة على الأقل مجاناً.</p></div>
+      </div>
+      <div class="faq-item glass-card">
+        <div class="faq-question"><h3>هل تتوفر كرات ومستلزمات اللعب؟</h3></div>
+        <div class="faq-answer"><p>بالتأكيد، نوفر كرات قدم احترافية وسترات تمييز الفريقين مجاناً مع كل حجز.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SPONSORS SECTION ================= -->
+  <section class="sponsors">
+    <div class="sponsors-slider">
+      <span>Adidas</span>
+      <span>Nike</span>
+      <span>Puma</span>
+      <span>Red Bull</span>
+      <span>Pepsi</span>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT & FOOTER ================= -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">تواصل معنا</h2>
+    <p>البريد الإلكتروني: info@kickoff.com</p>
+    <p>الهاتف: +20 100 000 0000</p>
+    <p>الموقع: القاهرة، مصر</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Kick Off. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
